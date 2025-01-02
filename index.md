@@ -6,18 +6,19 @@
     <title>Ramanjeet Singh Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff7e6;
+            background-color: #f9f9f9;
             color: #333;
         }
 
         header {
-            background-color: #ff8c42;
+            background: linear-gradient(135deg, #ff8c42, #ff7043);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            position: relative;
         }
 
         header img {
@@ -26,19 +27,23 @@
             height: 150px;
             object-fit: cover;
             border: 5px solid white;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 50%);
         }
 
         header h1 {
-            margin: 10px 0;
+            margin: 100px 0 10px;
+            font-size: 2.5em;
         }
 
         header p {
             font-size: 1.2em;
-            margin: 5px 0;
+            margin: 0;
         }
 
         main {
-            padding: 20px;
+            padding: 60px 20px 20px;
         }
 
         section {
@@ -46,10 +51,19 @@
         }
 
         section h2 {
-            border-bottom: 3px solid #ff8c42;
-            padding-bottom: 5px;
+            font-size: 1.8em;
             margin-bottom: 20px;
             color: #ff8c42;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ff8c42;
+            margin-top: 5px;
         }
 
         ul {
@@ -59,22 +73,42 @@
 
         ul li {
             margin-bottom: 10px;
-            padding: 10px;
-            background-color: #fff2e0;
-            border-left: 4px solid #ff8c42;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        ul li strong {
+            color: #ff8c42;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background-color: #ff8c42;
             color: white;
+        }
+
+        a {
+            color: #ff8c42;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="IMG_0803 Medium.png" alt="Ramanjeet Singh">
+        <img src="assets/IMG_0803 Medium.png" alt="Ramanjeet Singh">
         <h1>Ramanjeet Singh</h1>
         <p>Senior iOS Developer | Swift & Objective-C Expert</p>
     </header>
@@ -139,4 +173,3 @@
     </footer>
 </body>
 </html>
-
